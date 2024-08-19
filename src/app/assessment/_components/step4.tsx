@@ -62,30 +62,29 @@ export const Step4 = ({ onSetStep }: StepProps) => {
               </div>
             </div>
             <Switch
-              className={`${
-                animalList.some((obj) => obj.value === item.value)
+              className={`${animalList.some((obj) => obj.value === item.value)
                   ? "!bg-[#EA7E41]"
                   : "!bg-[#BAC1CC]"
-              } h-[30px]`}
+                } h-[30px]`}
               onClick={() =>
                 setAnimalList((prev) =>
                   prev.some((obj) => obj.value === item.value)
                     ? prev.filter((obj) => obj.value !== item.value)
                     : [
-                        ...prev,
-                        {
-                          imagePath: item.imagePath,
-                          label: item.label,
-                          value: item.value,
-                        },
-                      ]
+                      ...prev,
+                      {
+                        imagePath: item.imagePath,
+                        label: item.label,
+                        value: item.value,
+                      },
+                    ]
                 )
               }
             />
           </div>
         </>
       ))}
-      <div className="flex flex-row gap-2.5 bottom-0 fixed w-full pb-5 pr-10">
+      <div className="flex flex-row gap-2.5 bottom-0 fixed w-[375px] pb-5 pr-10">
         <Button
           variant={"outline"}
           className="rounded-[70px] w-[86] h-14 px-6 py-[13px] border-gray-400"

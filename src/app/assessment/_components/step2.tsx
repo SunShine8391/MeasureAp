@@ -20,9 +20,8 @@ export const Step2 = ({ onSetStep }: StepProps) => {
         </div>
         <div className="flex flex-col gap-0.5">
           <div
-            className={`${
-              all ? "" : "truncate line-clamp-2 whitespace-normal"
-            } font-medium text-[#6C7278] text-sm max-w-[262px] text-center`}
+            className={`${all ? "" : "truncate line-clamp-2 whitespace-normal"
+              } font-medium text-[#6C7278] text-sm max-w-[262px] text-center`}
           >
             Full Description: "Jill went to the shop to buy candies. Afterwards
             instead of walking home, she took a cab. When she arrived home, she
@@ -42,11 +41,10 @@ export const Step2 = ({ onSetStep }: StepProps) => {
         {AssessmentList.map((item) => (
           <Button
             variant={"outline"}
-            className={`${
-              assessmentList.some((obj) => obj.value === item.value)
+            className={`${assessmentList.some((obj) => obj.value === item.value)
                 ? "border-orange-700"
                 : "border-[#DCE4E8]"
-            } p-4 flex flex-row gap-3 border-[2px] rounded-[13px] h-[77px] justify-start`}
+              } p-4 flex flex-row gap-3 border-[2px] rounded-[13px] h-[77px] justify-start`}
             onClick={() =>
               setAssessmentList((prev) =>
                 prev.some((obj) => obj.value === item.value)
@@ -57,17 +55,16 @@ export const Step2 = ({ onSetStep }: StepProps) => {
           >
             <Checkbox
               checked={assessmentList.some((obj) => obj.value === item.value)}
-              className={`${
-                assessmentList.some((obj) => obj.value === item.value)
+              className={`${assessmentList.some((obj) => obj.value === item.value)
                   ? "border-[#EA7E41] !bg-[#EA7E41]"
                   : "border-gray-400"
-              } w-7 h-7 rounded-3xl`}
+                } w-7 h-7 rounded-3xl`}
             />
             <div className="text-[#1A1C1E] font-bold text-lg">{item.label}</div>
           </Button>
         ))}
       </div>
-      <div className="flex flex-row gap-2.5 bottom-0 fixed w-full pb-5 pr-10">
+      <div className="flex flex-row gap-2.5 bottom-0 fixed w-[375px] pb-5 pr-10">
         <Button
           variant={"outline"}
           className="rounded-[70px] w-[86] h-14 px-6 py-[13px] border-gray-400"

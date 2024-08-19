@@ -35,7 +35,7 @@ export const Step3 = ({ onSetStep }: StepProps) => {
           vel interdum accumsan lorem dictu.
         </div>
       </div>
-      <div className="flex flex-row gap-2.5 bottom-0 fixed w-full pb-5 pr-10">
+      <div className="flex flex-row gap-2.5 bottom-0 fixed w-[375px] pb-5 pr-10">
         <Button
           variant={"outline"}
           className="rounded-[70px] w-[86] h-14 px-6 py-[13px] border-gray-400"

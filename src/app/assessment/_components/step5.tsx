@@ -136,7 +136,7 @@ export const Step5 = ({ onSetStep }: StepProps) => {
         </Card>
       </div>
 
-      <div className="flex flex-row gap-4 bottom-0 fixed w-full pb-5 pr-10">
+      <div className="flex flex-row gap-4 bottom-0 fixed w-[375px] pb-5 pr-10">
         <Button
           variant={"outline"}
           className="items-center rounded-[70px] w-full h-14 px-6 py-[13px] font-bold text-lg"

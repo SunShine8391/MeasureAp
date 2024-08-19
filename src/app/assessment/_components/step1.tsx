@@ -21,24 +21,22 @@ export const Step1 = ({ onSetStep }: StepProps) => {
       <div className="flex flex-col gap-[13px]">
         <Button
           variant={"outline"}
-          className={`${
-            correct ? "border-orange-700" : "border-[#DCE4E8]"
-          } p-4 rounded-[13px] h-[77px] text-[#1A1C1E] font-bold text-lg justify-start`}
+          className={`${correct ? "border-orange-700" : "border-[#DCE4E8]"
+            } p-4 rounded-[13px] h-[77px] text-[#1A1C1E] font-bold text-lg justify-start`}
           onClick={() => setCorrect(true)}
         >
           Correct
         </Button>
         <Button
           variant={"outline"}
-          className={`${
-            correct ? "border-[#DCE4E8]" : "border-orange-700"
-          } p-4 rounded-[13px] h-[77px] text-[#1A1C1E] font-bold text-lg justify-start`}
+          className={`${correct ? "border-[#DCE4E8]" : "border-orange-700"
+            } p-4 rounded-[13px] h-[77px] text-[#1A1C1E] font-bold text-lg justify-start`}
           onClick={() => setCorrect(false)}
         >
           Incorrect
         </Button>
       </div>
-      <div className="bottom-0 fixed w-full pb-5 pr-10">
+      <div className="bottom-0 fixed w-[375px] pb-5 pr-10">
         <Button
           className="items-center rounded-[70px] w-full h-14 px-6 py-[13px] font-bold text-lg"
           onClick={() => onSetStep(2)}
